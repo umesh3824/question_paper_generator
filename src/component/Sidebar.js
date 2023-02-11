@@ -91,10 +91,10 @@ const useStyles = createStyles((theme, _params, getRef) => {
 });
 
 const data = [
-    { link: '/generate_paper', label: 'Generate Question Paper', icon: IconBellRinging },
-    { link: '/manage_question', label: 'Manage Questions', icon: IconReceipt2 },
-    { link: '/manage_subject', label: 'Manage Subject', icon: IconFingerprint },
-    { link: '/', label: 'Logout', icon: IconKey }
+    { link: '/home/generate_paper', label: 'Generate Question Paper', icon: IconBellRinging },
+    { link: '/home/manage_question', label: 'Manage Questions', icon: IconReceipt2 },
+    { link: '/home/manage_subject', label: 'Manage Subject', icon: IconFingerprint },
+    { link: '/home/logout', label: 'Logout', icon: IconKey }
 ];
 
 export default function Sidebar() {

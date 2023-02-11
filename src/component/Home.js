@@ -18,6 +18,7 @@ import ManageQuestions from '../pages/ManageQuestions';
 import UserProfile from '../pages/UserProfile';
 import ManageSubject from '../pages/ManageSubject';
 import Login from '../component/Login';
+import Logout from '../component/Logout';
 export default function Home() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
@@ -33,9 +34,10 @@ export default function Home() {
       
       navbar={
         <Navbar p="md" hiddenBreakpoint="sm" hidden={!opened} width={{ sm: 200, lg: 300 }}>
-         <Sidebar/>
+        <Sidebar/>
         </Navbar>
-      }
+      } 
+
       footer={
         <Footer height={60} p="md" style={{backgroundColor:'black',color:'white',textAlign:'center',border:'none'}}>
           Application footer
@@ -62,6 +64,7 @@ export default function Home() {
     >
       <Routes>
           <Route path="/" element={<Login/>}/>
+          <Route path="/logout" element={<Logout/>}/>
           <Route path="/generate_paper" element={<GenerateQuestionPaper/>}/>
           <Route path="/manage_question" element={<ManageQuestions/>}/>
           <Route path="/manage_subject" element={<ManageSubject/>}/>
